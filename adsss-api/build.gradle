@@ -1,0 +1,61 @@
+plugins {
+    id 'org.springframework.boot' version '2.7.2'
+    id 'io.spring.dependency-management' version '1.0.12.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation files('libs/activation.jar')
+    implementation files('libs/adss_client_api.jar')
+    implementation files('libs/apache.license')
+    implementation files('libs/bcmail-jdk15on-168.jar')
+    implementation files('libs/bcpkix-jdk15on-168.jar')
+    implementation files('libs/bcprov-jdk15on-168.jar')
+    implementation files('libs/bouncycastle.license')
+    implementation files('libs/commons-codec-1.3.jar')
+    implementation files('libs/commons-io-2.6.jar')
+    implementation files('libs/commons-logging.jar')
+    implementation files('libs/commons-validator-1.4.0.jar')
+    implementation files('libs/desktop.ini')
+    implementation files('libs/dom4j-2.1.3.jar')
+    implementation files('libs/httpclient-4.5.5.jar')
+    implementation files('libs/httpcore-4.4.9.jar')
+    implementation files('libs/iText.jar')
+    implementation files('libs/jaxb-api.jar')
+    implementation files('libs/jaxb-impl.jar')
+    implementation files('libs/jaxb1-impl.jar')
+    implementation files('libs/jdom.jar')
+    implementation files('libs/jdom.license')
+    implementation files('libs/json-simple-1.1.1.jar')
+    implementation files('libs/jsr173_1.0_api.jar')
+    implementation files('libs/lgpl.license')
+    implementation files('libs/log4j-api-2.13.3.jar')
+    implementation files('libs/log4j-core-2.13.3.jar')
+    implementation files('libs/mail.jar')
+    implementation files('libs/mpl.license')
+    implementation files('libs/slf4j-api-1.7.25.jar')
+    implementation files('libs/xml-apis.jar')
+    implementation files('libs/xmlsec-2.2.0.jar')
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
