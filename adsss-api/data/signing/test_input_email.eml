@@ -1,0 +1,28 @@
+X-Mozilla-Status: 0800
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+FCC: mailbox://alice@localhost/Sent
+X-Identity-Key: id2
+X-Account-Key: account3
+To: bob@ascertia-ses.com
+From: Alice <alice@ascertia-ses.com>
+Subject: Sample Test Email
+Message-ID: <640c8533-d797-18bc-2e03-0bbe027bfa11@ascertia-ses.com>
+Date: Fri, 28 Dec 2018 10:48:15 +0500
+X-Mozilla-Draft-Info: internal/draft; vcard=0; receipt=0; DSN=0; uuencode=0;
+ attachmentreminder=0; deliveryformat=4
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; rv:52.0) Gecko/20100101
+ Thunderbird/52.9.1
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Language: en-US
+
+Hi,
+
+This is a sample email to test Email Signing.
+
+Regards,
+
+Alice
+
