@@ -1,1 +1,1 @@
-# ADSS-SDK-VT-
+# ADSS-SDK-VT
